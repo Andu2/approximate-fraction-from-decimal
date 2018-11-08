@@ -16,6 +16,9 @@ function approximateFraction(decimal, maxError = 0.02) {
 	if (isNaN(decimal) || Math.abs(decimal) === Infinity) {
 		throw new Error("Number must not be NaN or Infinity");
 	}
+	if (maxError === 0) {
+		throw new Error("maxError cannot be zero");
+	}
 
 	var wholePart = Math.floor(decimal);
 	var decimalPart = decimal - wholePart;

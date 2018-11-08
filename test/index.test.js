@@ -15,6 +15,9 @@ describe("approximateFraction", function() {
 		expect(function() {
 			approximateFraction(-Infinity);
 		}).toThrowError("Number must not be NaN or Infinity");
+		expect(function() {
+			approximateFraction(2.5, 0);
+		}).toThrowError("maxError cannot be zero");
 	});
 
 	test("Returns the correct value for positive number", function() {
