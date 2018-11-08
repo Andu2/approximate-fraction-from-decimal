@@ -1,0 +1,17 @@
+{
+  "name": "approximate-fraction-from-decimal",
+  "version": "1.0.0",
+  "description": "Get a fraction within a maximum error range given a decimal number",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "fraction"
+  ],
+  "author": "Andu",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
